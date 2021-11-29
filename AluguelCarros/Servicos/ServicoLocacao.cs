@@ -24,7 +24,7 @@ namespace AluguelCarros
             TaxaServico = taxaServico;
         }
         //Método
-        public void ProcessamentoFatura(Entidades.AluguelCarro aluguelCarro)
+        public void ProcessamentoFatura(AluguelCarro aluguelCarro)
         {
             //Comparando datas e salvando em duracao
             TimeSpan duracao = aluguelCarro.Final.Subtract(aluguelCarro.Comeco);
@@ -45,7 +45,7 @@ namespace AluguelCarros
             //Calculando as taxas de acordo com os dados
             double Taxa = TaxaServico.Taxa(PagamentoBasico);
             //Salva um objeto com valores na pasta
-            aluguelCarro.Fatura = new Entidades.Fatura(PagamentoBasico, Taxa);
+            aluguelCarro.Fatura = new Fatura(PagamentoBasico, Taxa);
         }
 
     }

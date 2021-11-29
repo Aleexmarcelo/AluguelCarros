@@ -35,9 +35,9 @@ namespace AluguelCarros
             //Lê e salva o preço por dia.
             double dia = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);          
             //Cria uma variável com informações de aluguel digitadas em uma pasta.
-            Entidades.AluguelCarro aluguelCarro = new Entidades.AluguelCarro(comeco, saida, new Entidades.Veiculo(modelo));
+            AluguelCarro aluguelCarro = new AluguelCarro(comeco, saida, new Veiculo(modelo));
             //Cria uma variável com informações de serviços em uma pasta.
-            Servicos.ServicoLocacao servicoLocacao = new Servicos.ServicoLocacao(hora, dia, new Servicos.TaxaServicoBR());          
+            ServicoLocacao servicoLocacao = new ServicoLocacao(hora, dia, new TaxaServicoBR());          
             //Calcula o método de fatura, usando os dados digitados anteriormente.
             servicoLocacao.ProcessamentoFatura(aluguelCarro);
             //Mostra a fatura
