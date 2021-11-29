@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="NovaPasta1\" />
+    <Folder Include="NovaPasta2\" />
+    <Folder Include="NovaPasta3\" />
+    <Folder Include="NovaPasta4\" />
+    <Folder Include="NovaPasta5\" />
+    <Folder Include="NovaPasta\" />
+  </ItemGroup>
+
+</Project>
